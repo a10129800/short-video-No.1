@@ -1,276 +1,540 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="1080" height="1920">
   <defs>
-    <!-- Background Gradient (Atmospheric Deep Gym Shadows to Golden Dawn) -->
-    <linearGradient id="skyDawn" x1="50%" y1="0%" x2="50%" y2="100%">
-      <stop offset="0%" stop-color="#0a0812"/>
-      <stop offset="25%" stop-color="#140f1a"/>
-      <stop offset="60%" stop-color="#2a1608"/>
-      <stop offset="85%" stop-color="#180e06"/>
-      <stop offset="100%" stop-color="#0d0703"/>
+    <!-- Background Gradient (Deep Moody Arena Shadows to Warm Dawn) -->
+    <linearGradient id="bgDawnSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#080711"/>
+      <stop offset="25%" stop-color="#110d1c"/>
+      <stop offset="55%" stop-color="#221208"/>
+      <stop offset="80%" stop-color="#160c04"/>
+      <stop offset="100%" stop-color="#0b0602"/>
     </linearGradient>
 
-    <!-- Hardwood Court Gradient -->
+    <!-- Hardwood Court Gradient (Polished Honey Mahogany Perspective) -->
     <linearGradient id="floorGrad" x1="50%" y1="0%" x2="50%" y2="100%">
-      <stop offset="0%" stop-color="#2c170a"/>
-      <stop offset="30%" stop-color="#4a250f"/>
-      <stop offset="70%" stop-color="#2e1406"/>
-      <stop offset="100%" stop-color="#150902"/>
+      <stop offset="0%" stop-color="#241208"/>
+      <stop offset="25%" stop-color="#3d1d0c"/>
+      <stop offset="50%" stop-color="#542710"/>
+      <stop offset="75%" stop-color="#381809"/>
+      <stop offset="100%" stop-color="#1a0a03"/>
     </linearGradient>
 
-    <!-- God Rays Gradient 1 -->
-    <linearGradient id="godRay1" x1="0%" y1="0%" x2="80%" y2="100%">
-      <stop offset="0%" stop-color="#fffbeb" stop-opacity="0.85"/>
-      <stop offset="35%" stop-color="#fde047" stop-opacity="0.45"/>
-      <stop offset="70%" stop-color="#f59e0b" stop-opacity="0.18"/>
+    <!-- Golden God Ray 1 (High Intensity Core Beam) -->
+    <linearGradient id="godRayCore" x1="0%" y1="0%" x2="70%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="20%" stop-color="#fff7ed" stop-opacity="0.75"/>
+      <stop offset="45%" stop-color="#fde047" stop-opacity="0.4"/>
+      <stop offset="75%" stop-color="#f59e0b" stop-opacity="0.15"/>
       <stop offset="100%" stop-color="#b45309" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- God Rays Gradient 2 -->
-    <linearGradient id="godRay2" x1="10%" y1="0%" x2="90%" y2="100%">
-      <stop offset="0%" stop-color="#fef08a" stop-opacity="0.75"/>
-      <stop offset="40%" stop-color="#fbbf24" stop-opacity="0.35"/>
-      <stop offset="80%" stop-color="#d97706" stop-opacity="0.12"/>
+    <!-- Golden God Ray 2 (Broad Atmospheric Shaft) -->
+    <linearGradient id="godRayBroad" x1="10%" y1="0%" x2="85%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" stop-opacity="0.8"/>
+      <stop offset="35%" stop-color="#fbbf24" stop-opacity="0.32"/>
+      <stop offset="70%" stop-color="#d97706" stop-opacity="0.1"/>
       <stop offset="100%" stop-color="#78350f" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Skylight Glow -->
-    <radialGradient id="sunSource" cx="75%" cy="15%" r="50%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
-      <stop offset="20%" stop-color="#fef08a" stop-opacity="0.9"/>
-      <stop offset="50%" stop-color="#f59e0b" stop-opacity="0.5"/>
-      <stop offset="80%" stop-color="#ea580c" stop-opacity="0.2"/>
-      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
-    </radialGradient>
-
-    <!-- Floor Reflection Highlight -->
-    <radialGradient id="floorReflection" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.35"/>
-      <stop offset="40%" stop-color="#d97706" stop-opacity="0.15"/>
-      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
-    </radialGradient>
-
-    <!-- Gold Jersey Number 21 Gradient -->
-    <linearGradient id="jerseyGold" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="25%" stop-color="#fef08a"/>
-      <stop offset="60%" stop-color="#ffb703"/>
-      <stop offset="100%" stop-color="#d97706"/>
+    <!-- God Ray 3 (Secondary Diffuse Beam) -->
+    <linearGradient id="godRaySoft" x1="20%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#fed7aa" stop-opacity="0.6"/>
+      <stop offset="40%" stop-color="#f97316" stop-opacity="0.2"/>
+      <stop offset="85%" stop-color="#9a3412" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#451a03" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Character Rim Light Gold -->
-    <linearGradient id="rimLightRight" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#121824"/>
-      <stop offset="85%" stop-color="#1e293b"/>
-      <stop offset="96%" stop-color="#fbbf24"/>
+    <!-- Cathedral Sun Source (Blinding Dawn Sunburst) -->
+    <radialGradient id="sunburst" cx="80%" cy="12%" r="55%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="15%" stop-color="#fffbeb" stop-opacity="0.95"/>
+      <stop offset="35%" stop-color="#fef08a" stop-opacity="0.75"/>
+      <stop offset="60%" stop-color="#f59e0b" stop-opacity="0.35"/>
+      <stop offset="85%" stop-color="#ea580c" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Floor Sunlight Reflection Highlight -->
+    <radialGradient id="floorSunReflection" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fef08a" stop-opacity="0.5"/>
+      <stop offset="30%" stop-color="#f59e0b" stop-opacity="0.3"/>
+      <stop offset="65%" stop-color="#d97706" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Metallic Gold Gradient for Number 21 -->
+    <linearGradient id="gold21" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="20%" stop-color="#fef08a"/>
+      <stop offset="45%" stop-color="#facc15"/>
+      <stop offset="70%" stop-color="#f59e0b"/>
+      <stop offset="90%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+
+    <!-- Crimson Jersey Trim & Number Border Gradient -->
+    <linearGradient id="crimsonTrim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff4d6d"/>
+      <stop offset="50%" stop-color="#e63946"/>
+      <stop offset="100%" stop-color="#9b111e"/>
+    </linearGradient>
+
+    <!-- Skin Tone Shadow Gradient -->
+    <linearGradient id="skinBack" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c3a1d"/>
+      <stop offset="35%" stop-color="#a85526"/>
+      <stop offset="75%" stop-color="#c97238"/>
+      <stop offset="95%" stop-color="#fcd34d"/>
       <stop offset="100%" stop-color="#ffffff"/>
     </linearGradient>
 
-    <!-- Filter for Lens Flare & Glow -->
-    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="16" result="blur"/>
+    <!-- Jersey Fabric Shadow (Dark Charcoal to Pitch Black) -->
+    <linearGradient id="jerseyFabric" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#141926"/>
+      <stop offset="40%" stop-color="#0c101a"/>
+      <stop offset="100%" stop-color="#05070c"/>
+    </linearGradient>
+
+    <!-- Sneaker Red Gradient (AJ1 Bred) -->
+    <linearGradient id="sneakerRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff1a35"/>
+      <stop offset="60%" stop-color="#d90429"/>
+      <stop offset="100%" stop-color="#7a0014"/>
+    </linearGradient>
+
+    <!-- Anamorphic Horizontal Flare Gradient -->
+    <linearGradient id="anamorphicStreak" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0"/>
+      <stop offset="40%" stop-color="#fde047" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="60%" stop-color="#f59e0b" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#ea580c" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Top Vignette Gradient -->
+    <linearGradient id="topVignette" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Bottom Vignette Gradient -->
+    <linearGradient id="bottomVignette" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Filters for Glows -->
+    <filter id="glowSoft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
       <feComposite in="SourceGraphic" in2="blur" operator="over"/>
     </filter>
 
-    <filter id="megaGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="40" result="blur2"/>
-      <feComposite in="SourceGraphic" in2="blur2" operator="over"/>
+    <filter id="glowIntense" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="28" result="blur1"/>
+      <feGaussianBlur stdDeviation="8" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
     </filter>
   </defs>
 
-  <!-- 1. Background Arena Space -->
-  <rect width="1080" height="1920" fill="url(#skyDawn)"/>
+  <!-- ======================================================== -->
+  <!-- 1. ARENA BACKGROUND & HIGH RAFTERS                       -->
+  <!-- ======================================================== -->
+  <rect width="1080" height="1920" fill="url(#bgDawnSky)"/>
 
-  <!-- Arena Upper Steel Trusses & Girders -->
-  <g stroke="#261a10" stroke-width="6" opacity="0.65">
-    <line x1="0" y1="200" x2="1080" y2="200"/>
-    <line x1="0" y1="360" x2="1080" y2="360"/>
-    <line x1="120" y1="0" x2="120" y2="400"/>
-    <line x1="360" y1="0" x2="360" y2="400"/>
-    <line x1="600" y1="0" x2="600" y2="400"/>
-    <line x1="840" y1="0" x2="840" y2="400"/>
-    <!-- Diagonal Trusses -->
-    <line x1="0" y1="200" x2="120" y2="360"/>
-    <line x1="120" y1="200" x2="0" y2="360"/>
-    <line x1="120" y1="200" x2="360" y2="360"/>
-    <line x1="360" y1="200" x2="120" y2="360"/>
-    <line x1="360" y1="200" x2="600" y2="360"/>
-    <line x1="600" y1="200" x2="360" y2="360"/>
-    <line x1="600" y1="200" x2="840" y2="360"/>
-    <line x1="840" y1="200" x2="600" y2="360"/>
-    <line x1="840" y1="200" x2="1080" y2="360"/>
-    <line x1="1080" y1="200" x2="840" y2="360"/>
+  <!-- High Arena Structural Steel Beams & Catwalks -->
+  <g stroke="#26170d" stroke-width="8" opacity="0.65">
+    <line x1="0" y1="140" x2="1080" y2="140"/>
+    <line x1="0" y1="280" x2="1080" y2="280"/>
+    <line x1="0" y1="420" x2="1080" y2="420"/>
+    <line x1="140" y1="0" x2="140" y2="480"/>
+    <line x1="380" y1="0" x2="380" y2="480"/>
+    <line x1="620" y1="0" x2="620" y2="480"/>
+    <line x1="860" y1="0" x2="860" y2="480"/>
+    <!-- Diagonal cross trusses -->
+    <line x1="0" y1="140" x2="140" y2="280"/>
+    <line x1="140" y1="140" x2="0" y2="280"/>
+    <line x1="140" y1="140" x2="380" y2="280"/>
+    <line x1="380" y1="140" x2="140" y2="280"/>
+    <line x1="380" y1="140" x2="620" y2="280"/>
+    <line x1="620" y1="140" x2="380" y2="280"/>
+    <line x1="620" y1="140" x2="860" y2="280"/>
+    <line x1="860" y1="140" x2="620" y2="280"/>
+    <line x1="860" y1="140" x2="1080" y2="280"/>
+    <line x1="1080" y1="140" x2="860" y2="280"/>
   </g>
 
-  <!-- Distant Arena Seating & Shadows -->
-  <path d="M 0 780 L 1080 780 L 1080 1100 L 0 1100 Z" fill="#110a05" opacity="0.8"/>
-  <line x1="0" y1="840" x2="1080" y2="840" stroke="#1d1109" stroke-width="3"/>
-  <line x1="0" y1="920" x2="1080" y2="920" stroke="#1d1109" stroke-width="3"/>
-  <line x1="0" y1="1000" x2="1080" y2="1000" stroke="#1d1109" stroke-width="3"/>
+  <!-- Distant Arena Seating Bowl Silhouette in Deep Shadow -->
+  <path d="M 0 720 L 1080 720 L 1080 1120 L 0 1120 Z" fill="#120a05" opacity="0.88"/>
+  <g stroke="#1a0f08" stroke-width="3">
+    <line x1="0" y1="770" x2="1080" y2="770"/>
+    <line x1="0" y1="830" x2="1080" y2="830"/>
+    <line x1="0" y1="890" x2="1080" y2="890"/>
+    <line x1="0" y1="950" x2="1080" y2="950"/>
+    <line x1="0" y1="1010" x2="1080" y2="1010"/>
+    <line x1="0" y1="1070" x2="1080" y2="1070"/>
+  </g>
 
-  <!-- High Cathedral Window Arches (Top Right) -->
+  <!-- Distant Championship Banners Hanging in Dark Rafters -->
+  <g fill="#1a110a" stroke="#2c1a0e" stroke-width="2" opacity="0.7">
+    <polygon points="180,240 250,240 250,420 215,450 180,420"/>
+    <polygon points="280,240 350,240 350,440 315,470 280,440"/>
+    <polygon points="380,240 450,240 450,410 415,440 380,410"/>
+  </g>
+
+  <!-- High Cathedral Arch Windows (Top Right Architecture) -->
   <g stroke="#451a03" stroke-width="8" fill="none">
-    <path d="M 680 80 Q 820 20 960 80 L 960 400 L 680 400 Z" fill="#3a1c0b" opacity="0.7"/>
-    <path d="M 460 120 Q 560 70 660 120 L 660 400 L 460 400 Z" fill="#3a1c0b" opacity="0.6"/>
+    <path d="M 720 40 Q 860 -20 1000 40 L 1000 380 L 720 380 Z" fill="#381807" opacity="0.7"/>
+    <path d="M 520 80 Q 620 30 720 80 L 720 380 L 520 380 Z" fill="#2d1305" opacity="0.6"/>
+    <!-- Window Muntins -->
+    <line x1="860" y1="0" x2="860" y2="380" stroke="#240e04" stroke-width="6"/>
+    <line x1="720" y1="200" x2="1000" y2="200" stroke="#240e04" stroke-width="6"/>
   </g>
 
-  <!-- 2. Hardwood Basketball Court Floor (Perspective Floor) -->
-  <path d="M 0 1080 L 1080 1080 L 1080 1920 L 0 1920 Z" fill="url(#floorGrad)"/>
+  <!-- ======================================================== -->
+  <!-- 2. HARDWOOD BASKETBALL COURT (HIGH-GLOSS 3D PERSPECTIVE)  -->
+  <!-- ======================================================== -->
+  <!-- Court Floor Horizon at y = 1100 -->
+  <path d="M 0 1100 L 1080 1100 L 1080 1920 L 0 1920 Z" fill="url(#floorGrad)"/>
 
-  <!-- Wood Planks Perspective Lines -->
-  <g stroke="#1a0b04" stroke-width="3" opacity="0.5">
-    <line x1="540" y1="1080" x2="540" y2="1920"/>
-    <line x1="480" y1="1080" x2="420" y2="1920"/>
-    <line x1="600" y1="1080" x2="660" y2="1920"/>
-    <line x1="420" y1="1080" x2="280" y2="1920"/>
-    <line x1="660" y1="1080" x2="800" y2="1920"/>
-    <line x1="360" y1="1080" x2="140" y2="1920"/>
-    <line x1="720" y1="1080" x2="940" y2="1920"/>
-    <line x1="300" y1="1080" x2="-20" y2="1920"/>
-    <line x1="780" y1="1080" x2="1100" y2="1920"/>
+  <!-- Parquet Wood Plank Perspective Lines Converging to Vanishing Point -->
+  <g stroke="#1a0b04" stroke-width="3.5" opacity="0.45">
+    <line x1="540" y1="1100" x2="540" y2="1920"/>
+    <line x1="490" y1="1100" x2="430" y2="1920"/>
+    <line x1="590" y1="1100" x2="650" y2="1920"/>
+    <line x1="440" y1="1100" x2="310" y2="1920"/>
+    <line x1="640" y1="1100" x2="770" y2="1920"/>
+    <line x1="390" y1="1100" x2="180" y2="1920"/>
+    <line x1="690" y1="1100" x2="900" y2="1920"/>
+    <line x1="340" y1="1100" x2="40" y2="1920"/>
+    <line x1="740" y1="1100" x2="1040" y2="1920"/>
+    <line x1="290" y1="1100" x2="-110" y2="1920"/>
+    <line x1="790" y1="1100" x2="1190" y2="1920"/>
   </g>
 
-  <!-- Polished Court Planks Highlights -->
-  <line x1="120" y1="1260" x2="960" y2="1260" stroke="#ffb703" stroke-width="1.5" opacity="0.12"/>
-  <line x1="80" y1="1450" x2="1000" y2="1450" stroke="#ffb703" stroke-width="1.5" opacity="0.15"/>
-  <line x1="40" y1="1680" x2="1040" y2="1680" stroke="#ffb703" stroke-width="2" opacity="0.18"/>
+  <!-- Horizontal Wood Planks Sheen Lines (Polished Polyurethane Reflections) -->
+  <g stroke="#f59e0b" opacity="0.12">
+    <line x1="160" y1="1240" x2="920" y2="1240" stroke-width="1.5"/>
+    <line x1="120" y1="1380" x2="960" y2="1380" stroke-width="2"/>
+    <line x1="80" y1="1540" x2="1000" y2="1540" stroke-width="2.5"/>
+    <line x1="40" y1="1720" x2="1040" y2="1720" stroke-width="3"/>
+  </g>
 
-  <!-- Center Court Jump-Ball Circle (Perspective Ellipse) -->
-  <ellipse cx="540" cy="1540" rx="360" ry="110" fill="none" stroke="#ffb703" stroke-width="7" opacity="0.85" filter="url(#softGlow)"/>
-  <ellipse cx="540" cy="1540" rx="140" ry="44" fill="none" stroke="#e63946" stroke-width="5" opacity="0.9"/>
-  <!-- Half-Court Line -->
-  <line x1="0" y1="1540" x2="1080" y2="1540" stroke="#ffb703" stroke-width="6" opacity="0.85"/>
+  <!-- Giant Floor Reflection of God Rays & Sunburst -->
+  <ellipse cx="600" cy="1540" rx="460" ry="260" fill="url(#floorSunReflection)"/>
 
-  <!-- Huge Floor Reflection Glow of God Rays -->
-  <ellipse cx="580" cy="1520" rx="420" ry="240" fill="url(#floorReflection)"/>
+  <!-- ======================================================== -->
+  <!-- 3. CENTER COURT JUMP BALL CIRCLE & MIDCOURT MARKINGS      -->
+  <!-- ======================================================== -->
+  <!-- Half-Court Line (Passing Through Center of Circle) -->
+  <line x1="0" y1="1560" x2="1080" y2="1560" stroke="#f59e0b" stroke-width="8" opacity="0.9" filter="url(#glowSoft)"/>
+  <line x1="0" y1="1560" x2="1080" y2="1560" stroke="#ffffff" stroke-width="2" opacity="0.75"/>
 
-  <!-- 3. Giant Volumetric God Rays (Light Beams Streaming from Cathedral Window) -->
-  <polygon points="780,40 1020,40 850,1920 280,1920" fill="url(#godRay1)"/>
-  <polygon points="620,80 840,80 560,1920 40,1920" fill="url(#godRay2)"/>
-  <polygon points="860,20 1080,20 1080,1800 680,1920" fill="url(#godRay1)" opacity="0.7"/>
+  <!-- Center Circle Outer Ring (12-foot Jump-Ball Outer Circle) -->
+  <ellipse cx="540" cy="1560" rx="380" ry="120" fill="none" stroke="#f59e0b" stroke-width="9" opacity="0.95" filter="url(#glowSoft)"/>
+  <ellipse cx="540" cy="1560" rx="380" ry="120" fill="none" stroke="#fef08a" stroke-width="3" opacity="0.8"/>
 
-  <!-- Brilliant Sun Source Glow (Top Right Window) -->
-  <ellipse cx="860" cy="140" rx="340" ry="200" fill="url(#sunSource)" filter="url(#megaGlow)"/>
+  <!-- Center Circle Inner Core (Restraining Circle with Crimson Glow) -->
+  <ellipse cx="540" cy="1560" rx="150" ry="50" fill="#9b111e" fill-opacity="0.35" stroke="url(#crimsonTrim)" stroke-width="6" opacity="0.95"/>
+  <ellipse cx="540" cy="1560" rx="150" ry="50" fill="none" stroke="#ff85a1" stroke-width="2" opacity="0.6"/>
 
-  <!-- 4. Hero Character: Lu Zi-xuan #21 (Back View, Moving into Center Court) -->
-  
-  <!-- Cast Shadow on Polished Wood Floor -->
-  <ellipse cx="540" cy="1780" rx="140" ry="32" fill="#000000" opacity="0.75"/>
-  <ellipse cx="590" cy="1760" rx="90" ry="22" fill="#2d1303" opacity="0.5"/>
+  <!-- Center Logo / Emblem Accent Shadow on Court -->
+  <path d="M 540 1525 L 565 1560 L 540 1595 L 515 1560 Z" fill="#ffb703" opacity="0.5"/>
 
-  <!-- Hero Body Group -->
-  <g id="luZixuanHeroBack">
-    <!-- Legs & Black Compression Tights -->
-    <!-- Left Leg (Stepping Forward) -->
-    <path d="M 470 1480 L 455 1620 L 440 1740 L 485 1750 L 515 1620 L 510 1480 Z" fill="#090d14"/>
-    <!-- Right Leg (Anchor Foot) -->
-    <path d="M 570 1480 L 575 1620 L 585 1740 L 635 1735 L 615 1620 L 610 1480 Z" fill="#090d14"/>
+  <!-- ======================================================== -->
+  <!-- 4. VOLUMETRIC GOD RAYS (MASSIVE SUNLIGHT SHAFTS)         -->
+  <!-- ======================================================== -->
+  <!-- God Ray 1: Core Majestic Beam Falling from Upper Right to Lower Left -->
+  <polygon points="760,20 1020,20 860,1920 260,1920" fill="url(#godRayCore)"/>
+
+  <!-- God Ray 2: Broader Soft Ambient Sunlight Shaft -->
+  <polygon points="560,60 880,60 620,1920 20,1920" fill="url(#godRayBroad)"/>
+
+  <!-- God Ray 3: Diffuse Rim Shaft Crossing Directly over Character Right Side -->
+  <polygon points="880,10 1080,10 1080,1850 680,1920" fill="url(#godRaySoft)"/>
+
+  <!-- Cathedral Sunburst Flare (Top Right Window Epic Dawn Glow) -->
+  <ellipse cx="880" cy="100" rx="420" ry="240" fill="url(#sunburst)" filter="url(#glowIntense)"/>
+
+  <!-- Anamorphic Horizontal Lens Flare Streak -->
+  <rect x="0" y="90" width="1080" height="18" fill="url(#anamorphicStreak)"/>
+  <rect x="180" y="95" width="720" height="8" fill="#ffffff" opacity="0.8" filter="url(#glowSoft)"/>
+
+  <!-- ======================================================== -->
+  <!-- 5. HERO REFLECTION ON GLOSSY HARDWOOD FLOOR              -->
+  <!-- ======================================================== -->
+  <!-- Inverted Blurred Reflection of Lu Zi-xuan & Gold #21 -->
+  <g opacity="0.25" transform="scale(1, -0.45) translate(0, -4800)" filter="url(#glowSoft)">
+    <!-- Reflection Legs & Jersey -->
+    <path d="M 440 1000 L 640 1000 L 670 1340 L 410 1340 Z" fill="#f59e0b"/>
+    <text x="540" y="1250" fill="#fef08a" font-family="'Impact', Arial Black, sans-serif" font-size="190" font-weight="900" text-anchor="middle" letter-spacing="10">21</text>
+  </g>
+
+  <!-- Player Contact Ground Shadow on Floor -->
+  <ellipse cx="540" cy="1795" rx="170" ry="36" fill="#000000" opacity="0.85"/>
+  <ellipse cx="610" cy="1780" rx="110" ry="24" fill="#2d1303" opacity="0.6"/>
+
+  <!-- ======================================================== -->
+  <!-- 6. HERO PROTAGONIST: LU ZI-XUAN (#21 SF)                 -->
+  <!-- ======================================================== -->
+  <g id="luZiXuanHero">
+
+    <!-- A. SNEAKERS & LEGS (FORWARD STRIDE INTO JUMP-BALL CIRCLE) -->
+    <!-- Left Leg (Trailing Leg, Lifting Off Heel, Black Compression Tights) -->
+    <path d="M 465 1470 L 450 1620 L 435 1740 L 485 1750 L 515 1620 L 510 1470 Z" fill="#090d15"/>
+    <!-- Left Leg Calf Muscle Shading & Highlight -->
+    <path d="M 460 1520 Q 440 1600 455 1690 L 475 1690 Q 460 1600 480 1520 Z" fill="#151d2f" opacity="0.8"/>
     
-    <!-- Red-Black-White High-Top Sneakers (AJ1 Bred silhouette) -->
-    <!-- Left Sneaker -->
-    <path d="M 435 1735 L 420 1765 L 450 1780 L 495 1775 L 490 1740 Z" fill="#d00000"/>
-    <path d="M 420 1765 L 415 1780 L 485 1785 L 495 1775 Z" fill="#ffffff"/>
-    <line x1="435" y1="1750" x2="480" y2="1755" stroke="#000000" stroke-width="4"/>
-
-    <!-- Right Sneaker (Front foot crossing half-court line) -->
-    <path d="M 580 1730 L 575 1760 L 615 1775 L 650 1765 L 640 1730 Z" fill="#d00000"/>
-    <path d="M 575 1760 L 570 1775 L 640 1780 L 650 1765 Z" fill="#ffffff"/>
-    <line x1="590" y1="1745" x2="635" y2="1745" stroke="#000000" stroke-width="4"/>
-
-    <!-- Basketball Shorts (Black with Red/Gold Trim) -->
-    <path d="M 430 1280 L 390 1490 L 500 1510 L 540 1340 L 580 1510 L 690 1490 L 650 1280 Z" fill="#0a0e17" stroke="#1c2538" stroke-width="2"/>
-    <!-- Red & Gold Hem Trims -->
-    <path d="M 390 1490 L 500 1510" stroke="#ffb703" stroke-width="7"/>
-    <path d="M 392 1482 L 498 1502" stroke="#e63946" stroke-width="4"/>
-    <path d="M 580 1510 L 690 1490" stroke="#ffb703" stroke-width="7"/>
-    <path d="M 582 1502 L 688 1482" stroke="#e63946" stroke-width="4"/>
-
-    <!-- Muscular Torso & Jersey Back -->
-    <path d="M 440 920 L 390 1020 L 420 1290 L 660 1290 L 690 1020 L 640 920 Z" fill="#080c14"/>
-    <!-- Rim Light on Right Shoulder/Back (Hit by Sunbeam) -->
-    <path d="M 540 920 L 640 920 L 690 1020 L 660 1290 L 630 1290 L 650 1020 L 610 930 Z" fill="#fbbf24" opacity="0.35"/>
-
-    <!-- Jersey Armhole & Neck Red-Gold Trim -->
-    <path d="M 440 920 L 485 935 L 595 935 L 640 920" stroke="#ffb703" stroke-width="6" fill="none"/>
-    <path d="M 442 927 L 485 941 L 595 941 L 638 927" stroke="#e63946" stroke-width="4" fill="none"/>
-    <path d="M 440 920 Q 400 1000 420 1070" stroke="#ffb703" stroke-width="6" fill="none"/>
-    <path d="M 640 920 Q 680 1000 660 1070" stroke="#ffb703" stroke-width="6" fill="none"/>
-
-    <!-- Player Name on Jersey: LU ZI-XUAN -->
-    <text x="540" y="995" fill="#f8fafc" font-family="'Inter', 'Noto Sans TC', sans-serif" font-size="28" font-weight="900" text-anchor="middle" letter-spacing="8">LU ZI-XUAN</text>
-
-    <!-- BOLD RADIANT GOLD NUMBER 21 -->
-    <g filter="url(#softGlow)">
-      <text x="540" y="1190" fill="url(#jerseyGold)" stroke="#d97706" stroke-width="3" font-family="'Impact', Arial Black, sans-serif" font-size="190" font-weight="900" text-anchor="middle" letter-spacing="10">21</text>
+    <!-- Left Sneaker (Air Jordan 1 High Bred, Trailing Foot on Toe) -->
+    <g id="leftSneaker">
+      <!-- Black Sole Base & Red Outsole -->
+      <path d="M 432 1735 L 412 1770 L 445 1785 L 495 1780 L 492 1740 Z" fill="url(#sneakerRed)"/>
+      <path d="M 412 1770 L 406 1785 L 485 1792 L 495 1780 Z" fill="#ffffff"/>
+      <!-- Black Heel Counter & Quarter Panel -->
+      <path d="M 435 1735 L 420 1765 L 455 1768 L 475 1740 Z" fill="#0a0e17"/>
+      <path d="M 438 1748 L 482 1752" stroke="#d90429" stroke-width="4"/>
+      <!-- White Midsole Stripe -->
+      <path d="M 408 1782 L 490 1788" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
     </g>
 
-    <!-- Red Stroke Accent inside Number -->
-    <text x="540" y="1190" fill="none" stroke="#e63946" stroke-width="2" font-family="'Impact', Arial Black, sans-serif" font-size="190" font-weight="900" text-anchor="middle" letter-spacing="10" opacity="0.8">21</text>
+    <!-- Right Leg (Lead Stride Leg, Planted Firmly Across Midcourt Line) -->
+    <path d="M 570 1470 L 578 1610 L 590 1730 L 642 1725 L 620 1610 L 610 1470 Z" fill="#090d15"/>
+    <!-- Right Leg Sun Rim Light (Striking Calf from the Right) -->
+    <path d="M 610 1480 L 620 1610 L 642 1725 L 632 1727 L 610 1610 L 602 1480 Z" fill="#facc15" opacity="0.85"/>
+    <path d="M 615 1520 L 622 1610 L 640 1720" stroke="#ffffff" stroke-width="3" fill="none"/>
 
-    <!-- Athletic Lean Arms with Veins & Sweat Glisten -->
-    <!-- Left Arm: Reaching up bending elbow to adjust wristband -->
-    <path d="M 440 920 L 330 1000 L 360 1150 L 400 1145 L 375 1030 L 465 960 Z" fill="#b45309" opacity="0.9"/>
-    <path d="M 360 1150 L 445 1190 L 460 1150 L 390 1120 Z" fill="#92400e"/>
-    <!-- Black Wristband on Left Wrist -->
-    <rect x="420" y="1140" width="48" height="32" rx="6" transform="rotate(25 435 1155)" fill="#000000" stroke="#ffb703" stroke-width="2.5"/>
+    <!-- Right Sneaker (AJ1 High Bred, Planted Sole with Red Heel & White Side) -->
+    <g id="rightSneaker">
+      <path d="M 585 1725 L 580 1760 L 625 1775 L 665 1765 L 652 1725 Z" fill="url(#sneakerRed)"/>
+      <!-- White Midsole Wall -->
+      <path d="M 580 1760 L 575 1776 L 655 1782 L 665 1765 Z" fill="#ffffff"/>
+      <!-- Black Toe Box & Eyelets -->
+      <path d="M 590 1728 L 588 1755 L 635 1760 L 645 1730 Z" fill="#0a0e17"/>
+      <!-- Red Collar Trim & Heel -->
+      <path d="M 595 1740 L 648 1742" stroke="#d90429" stroke-width="4"/>
+      <!-- Red Bottom Traction Sole -->
+      <path d="M 575 1776 L 655 1782" stroke="#d90429" stroke-width="4"/>
+    </g>
 
-    <!-- Right Arm: Muscular arm hanging naturally, fist clenching -->
-    <path d="M 640 920 L 740 1020 L 720 1200 L 680 1200 L 695 1040 L 615 950 Z" fill="#d97706" opacity="0.95"/>
-    <ellipse cx="700" cy="1235" rx="25" ry="35" fill="#b45309"/>
-    <!-- Bright Golden Rim Light along Right Arm & Hand -->
-    <path d="M 640 920 L 740 1020 L 720 1200" stroke="#ffffff" stroke-width="6" stroke-linecap="round" fill="none" filter="url(#softGlow)"/>
+    <!-- B. BASKETBALL SHORTS (LOOSE ATHLETIC SILHOUETTE WITH RED/GOLD TRIM) -->
+    <g id="basketballShorts">
+      <!-- Main Shorts Body (Deep Charcoal Black with Folds) -->
+      <path d="M 425 1270 L 385 1480 L 505 1502 L 540 1335 L 575 1502 L 695 1480 L 655 1270 Z" fill="url(#jerseyFabric)"/>
+      
+      <!-- Shorts Folds & Fabric Creases -->
+      <path d="M 465 1285 Q 445 1370 415 1475" stroke="#05070c" stroke-width="6" fill="none"/>
+      <path d="M 505 1310 Q 500 1410 490 1495" stroke="#05070c" stroke-width="6" fill="none"/>
+      <path d="M 575 1310 Q 580 1410 590 1495" stroke="#05070c" stroke-width="6" fill="none"/>
+      <path d="M 615 1285 Q 635 1370 665 1475" stroke="#05070c" stroke-width="6" fill="none"/>
 
-    <!-- Neck & Head (Back of head, messy layered black spiky anime hair) -->
-    <path d="M 495 860 L 490 930 L 590 930 L 585 860 Z" fill="#9a3412"/>
-    <!-- Head & Hair Silhouette -->
-    <ellipse cx="540" cy="800" rx="90" ry="105" fill="#080c14"/>
-    <!-- Layered Spiky Hair Strands -->
-    <polygon points="500,740 450,710 520,770" fill="#0a0f1d"/>
-    <polygon points="530,710 520,660 560,730" fill="#0a0f1d"/>
-    <polygon points="560,700 580,650 595,730" fill="#0a0f1d"/>
-    <polygon points="600,720 640,690 610,770" fill="#0a0f1d"/>
-    <polygon points="620,760 670,750 625,810" fill="#0a0f1d"/>
-    <polygon points="460,760 410,770 470,820" fill="#0a0f1d"/>
-    <polygon points="480,820 430,850 495,870" fill="#0a0f1d"/>
-    <polygon points="600,820 650,850 585,870" fill="#0a0f1d"/>
-    
-    <!-- Golden Rim Light outlining Right Edge of Hair & Neck -->
-    <path d="M 540 680 Q 630 700 640 820 L 590 920" stroke="#fef08a" stroke-width="7" fill="none" filter="url(#softGlow)"/>
-    <path d="M 540 680 Q 630 700 640 820 L 590 920" stroke="#ffffff" stroke-width="2.5" fill="none"/>
+      <!-- Left Leg Hem Piping (Red & Gold Dual Stripes) -->
+      <path d="M 385 1480 L 505 1502" stroke="#ffb703" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 388 1472 L 502 1494" stroke="#e63946" stroke-width="4.5" stroke-linecap="round"/>
+
+      <!-- Right Leg Hem Piping (Red & Gold Dual Stripes + Sun Flare) -->
+      <path d="M 575 1502 L 695 1480" stroke="#ffb703" stroke-width="8" stroke-linecap="round"/>
+      <path d="M 578 1494 L 692 1472" stroke="#e63946" stroke-width="4.5" stroke-linecap="round"/>
+      
+      <!-- Golden Sun Glint on Right Shorts Edge -->
+      <path d="M 655 1270 L 695 1480" stroke="#fde047" stroke-width="4" fill="none" opacity="0.9"/>
+    </g>
+
+    <!-- C. MUSCULAR BACK & ATHLETIC JERSEY #21 -->
+    <g id="jerseyTorso">
+      <!-- Main Athletic Jersey Back (Broad Shoulders Tapering to Waist) -->
+      <path d="M 435 915 L 380 1010 L 415 1275 L 665 1275 L 700 1010 L 645 915 Z" fill="url(#jerseyFabric)"/>
+      
+      <!-- Realistic Sweat Darkening Patch (Between Shoulder Blades & Spine) -->
+      <path d="M 510 960 Q 540 980 570 960 Q 590 1080 570 1200 Q 540 1220 510 1200 Q 490 1080 510 960 Z" fill="#030408" opacity="0.85"/>
+      <path d="M 535 970 L 535 1210" stroke="#020306" stroke-width="5" opacity="0.9"/>
+
+      <!-- Jersey Armhole & Neck Red-Gold Trim Borders -->
+      <!-- Left Armhole Trim -->
+      <path d="M 435 915 Q 390 990 415 1060" stroke="#ffb703" stroke-width="7" fill="none"/>
+      <path d="M 438 920 Q 396 990 418 1056" stroke="#e63946" stroke-width="4" fill="none"/>
+
+      <!-- Right Armhole Trim (Catching Radiant Golden Rim Light) -->
+      <path d="M 645 915 Q 690 990 665 1060" stroke="#fef08a" stroke-width="8" fill="none" filter="url(#glowSoft)"/>
+      <path d="M 642 920 Q 684 990 662 1056" stroke="#e63946" stroke-width="4" fill="none"/>
+
+      <!-- Collar Trim -->
+      <path d="M 435 915 L 485 930 L 595 930 L 645 915" stroke="#ffb703" stroke-width="7" fill="none"/>
+      <path d="M 438 922 L 485 936 L 595 936 L 642 922" stroke="#e63946" stroke-width="4" fill="none"/>
+
+      <!-- Player Name Arching Across Upper Back: LU ZI-XUAN -->
+      <g filter="url(#glowSoft)">
+        <text x="540" y="985" fill="#ffffff" font-family="'Inter', 'Noto Sans TC', sans-serif" font-size="28" font-weight="900" text-anchor="middle" letter-spacing="9">LU ZI-XUAN</text>
+      </g>
+      <text x="540" y="985" fill="#fef08a" font-family="'Inter', 'Noto Sans TC', sans-serif" font-size="28" font-weight="900" text-anchor="middle" letter-spacing="9">LU ZI-XUAN</text>
+
+      <!-- ==================================================== -->
+      <!-- THE LEGENDARY GOLDEN NUMBER 21 (BATTLE-TESTED GLORY) -->
+      <!-- ==================================================== -->
+      <!-- Outer Crimson Stroke Shadow -->
+      <text x="540" y="1185" fill="none" stroke="#9b111e" stroke-width="18" stroke-linejoin="round" font-family="'Impact', Arial Black, sans-serif" font-size="205" font-weight="900" text-anchor="middle" letter-spacing="12">21</text>
+      <text x="540" y="1185" fill="none" stroke="#e63946" stroke-width="12" stroke-linejoin="round" font-family="'Impact', Arial Black, sans-serif" font-size="205" font-weight="900" text-anchor="middle" letter-spacing="12">21</text>
+      
+      <!-- Volumetric Golden Aura Glow -->
+      <g filter="url(#glowIntense)">
+        <text x="540" y="1185" fill="url(#gold21)" font-family="'Impact', Arial Black, sans-serif" font-size="205" font-weight="900" text-anchor="middle" letter-spacing="12">21</text>
+      </g>
+
+      <!-- Main Metallic Gold Solid Core -->
+      <text x="540" y="1185" fill="url(#gold21)" font-family="'Impact', Arial Black, sans-serif" font-size="205" font-weight="900" text-anchor="middle" letter-spacing="12">21</text>
+      
+      <!-- Inner Bevel Highlight Line for 3D Athletic Jersey Feel -->
+      <text x="536" y="1181" fill="none" stroke="#ffffff" stroke-width="3" font-family="'Impact', Arial Black, sans-serif" font-size="205" font-weight="900" text-anchor="middle" letter-spacing="12" opacity="0.85">21</text>
+    </g>
+
+    <!-- D. ARMS & ACTIONS (GRIPPING WRISTBAND WITH UNSHAKABLE RESOLVE) -->
+    <!-- Left Arm (Bent, Hand Tightening Left Wristband Behind Waist) -->
+    <g id="leftArmAction">
+      <!-- Upper Arm / Deltoid -->
+      <path d="M 435 915 L 325 995 L 355 1140 L 400 1135 L 375 1025 L 458 955 Z" fill="#9a3412"/>
+      <!-- Forearm Reaching Across Toward Hip/Wrist -->
+      <path d="M 355 1140 L 440 1180 L 455 1140 L 390 1115 Z" fill="#b45309"/>
+      
+      <!-- Left Hand Tightly Gripping & Adjusting Wristband -->
+      <!-- Fingers Flexed Over Wristband -->
+      <path d="M 435 1145 Q 460 1135 455 1175 Q 440 1185 425 1165 Z" fill="#c97238"/>
+      
+      <!-- The Iconic Black Left Compression Wristband -->
+      <rect x="415" y="1132" width="46" height="34" rx="7" transform="rotate(22 438 1149)" fill="#05070a" stroke="#ffb703" stroke-width="3" filter="url(#glowSoft)"/>
+      <line x1="424" y1="1138" x2="444" y2="1164" stroke="#e63946" stroke-width="3"/>
+    </g>
+
+    <!-- Right Arm (Swinging Forward, Veins Standing Out, Clenched Heroic Fist) -->
+    <g id="rightArmHero">
+      <!-- Triceps & Biceps (Powerful Athletic Contours) -->
+      <path d="M 645 915 L 755 1020 L 735 1205 L 685 1200 L 705 1035 L 620 945 Z" fill="#a85526"/>
+      
+      <!-- Clenched Right Fist in Mid-Stride -->
+      <ellipse cx="712" cy="1235" rx="26" ry="34" fill="#8c4a24"/>
+      <path d="M 698 1220 L 725 1220 L 728 1250 L 700 1250 Z" fill="#7c3a1d"/>
+      <ellipse cx="705" cy="1260" rx="14" ry="10" fill="#a85526"/>
+
+      <!-- Blinding Dawn Rim Light Along Entire Right Arm, Deltoid & Fist -->
+      <path d="M 645 915 L 755 1020 L 735 1205 L 715 1255" stroke="#ffffff" stroke-width="7" stroke-linecap="round" fill="none" filter="url(#glowSoft)"/>
+      <path d="M 645 915 L 755 1020 L 735 1205 L 715 1255" stroke="#fef08a" stroke-width="12" stroke-linecap="round" fill="none" opacity="0.6"/>
+      <!-- Sweat Droplet Highlights on Arm Glistening in Sunbeam -->
+      <circle cx="740" cy="1060" r="3.5" fill="#ffffff" filter="url(#glowSoft)"/>
+      <circle cx="732" cy="1110" r="4" fill="#ffffff" filter="url(#glowSoft)"/>
+      <circle cx="722" cy="1170" r="3" fill="#ffffff"/>
+    </g>
+
+    <!-- E. NECK, HEAD & ANIME HAIR (HEROIC BACK VIEW) -->
+    <g id="headAndHair">
+      <!-- Muscular Taut Neck -->
+      <path d="M 495 850 L 490 925 L 590 925 L 585 850 Z" fill="#8c4a24"/>
+      <!-- Neck Shadow & Rim Light -->
+      <path d="M 565 850 L 590 925 L 575 925 L 555 850 Z" fill="#fef08a" opacity="0.8"/>
+
+      <!-- Base Head Silhouette -->
+      <ellipse cx="540" cy="790" rx="90" ry="105" fill="#080c14"/>
+
+      <!-- Messy Layered Anime Black Hair (Spiky Silhouettes with Natural Flow) -->
+      <path d="M 460 740 Q 430 700 480 670 Q 520 630 550 670 Q 580 620 620 660 Q 660 700 630 750 Q 670 780 635 830 Q 660 860 600 870 L 480 870 Q 430 850 450 810 Q 410 770 460 740 Z" fill="#0a0e1a"/>
+      
+      <!-- Individual Anime Hair Strands & Feathered Layers -->
+      <polygon points="520,660 490,610 535,655" fill="#111827"/>
+      <polygon points="555,640 570,590 585,645" fill="#111827"/>
+      <polygon points="590,650 630,610 615,670" fill="#111827"/>
+      <polygon points="625,680 675,650 640,710" fill="#111827"/>
+      <polygon points="640,730 690,720 645,770" fill="#111827"/>
+      <polygon points="635,790 680,800 625,835" fill="#111827"/>
+      
+      <!-- Left Ear & Shadow -->
+      <path d="M 450 790 Q 435 820 455 845 Z" fill="#6d3014"/>
+
+      <!-- Golden Sunrise Rim Light Outlining Right Side of Hair & Neck -->
+      <path d="M 550 600 Q 640 620 665 730 Q 685 800 630 870 L 590 925" stroke="#ffffff" stroke-width="4.5" fill="none" stroke-linecap="round" filter="url(#glowSoft)"/>
+      <path d="M 550 600 Q 640 620 665 730 Q 685 800 630 870 L 590 925" stroke="#fef08a" stroke-width="9" fill="none" stroke-linecap="round" opacity="0.65"/>
+    </g>
+
   </g>
 
-  <!-- 5. Floating Dust Motes & Golden Bokeh in Sunbeam (Atmospheric Embers) -->
-  <g fill="#fef08a" filter="url(#softGlow)">
-    <circle cx="820" cy="340" r="10" opacity="0.9"/>
-    <circle cx="760" cy="520" r="7" opacity="0.8"/>
-    <circle cx="890" cy="680" r="12" opacity="0.75"/>
-    <circle cx="680" cy="620" r="6" opacity="0.85"/>
-    <circle cx="740" cy="850" r="9" opacity="0.8"/>
-    <circle cx="620" cy="980" r="8" opacity="0.7"/>
-    <circle cx="810" cy="1120" r="14" opacity="0.85"/>
-    <circle cx="680" cy="1280" r="10" opacity="0.75"/>
-    <circle cx="560" cy="1380" r="7" opacity="0.9"/>
-    <circle cx="480" cy="1200" r="5" opacity="0.6"/>
-    <circle cx="380" cy="1420" r="8" opacity="0.55"/>
-    <circle cx="720" cy="1600" r="11" opacity="0.7"/>
-    <circle cx="850" cy="1480" r="9" opacity="0.65"/>
-    <circle cx="940" cy="1220" r="13" opacity="0.6"/>
-    <circle cx="640" cy="1720" r="7" opacity="0.8"/>
+  <!-- ======================================================== -->
+  <!-- 7. FLOATING ATMOSPHERIC DUST MOTES & SUNBEAM EMBERS       -->
+  <!-- ======================================================== -->
+  <!-- Large Floating Golden Dust Particles (Cinematic Bokeh in God Rays) -->
+  <g fill="#fef08a" filter="url(#glowSoft)">
+    <circle cx="840" cy="310" r="11" opacity="0.95"/>
+    <circle cx="770" cy="480" r="8" opacity="0.85"/>
+    <circle cx="910" cy="650" r="14" opacity="0.8"/>
+    <circle cx="690" cy="590" r="7" opacity="0.9"/>
+    <circle cx="750" cy="810" r="10" opacity="0.85"/>
+    <circle cx="630" cy="940" r="9" opacity="0.75"/>
+    <circle cx="820" cy="1080" r="15" opacity="0.85"/>
+    <circle cx="690" cy="1240" r="11" opacity="0.8"/>
+    <circle cx="580" cy="1350" r="8" opacity="0.95"/>
+    <circle cx="490" cy="1170" r="6" opacity="0.7"/>
+    <circle cx="390" cy="1390" r="9" opacity="0.6"/>
+    <circle cx="730" cy="1570" r="12" opacity="0.75"/>
+    <circle cx="860" cy="1440" r="10" opacity="0.7"/>
+    <circle cx="950" cy="1180" r="14" opacity="0.65"/>
+    <circle cx="650" cy="1680" r="8" opacity="0.85"/>
+    <circle cx="420" cy="1590" r="7" opacity="0.6"/>
+    <circle cx="310" cy="1720" r="10" opacity="0.55"/>
   </g>
 
-  <!-- Micro Sparkling Dust Particles -->
+  <!-- Micro Sparkling Dust Flecks & Sweat Glisten Specks -->
   <g fill="#ffffff">
-    <circle cx="790" cy="400" r="3.5"/>
-    <circle cx="840" cy="620" r="4"/>
-    <circle cx="710" cy="780" r="3"/>
-    <circle cx="760" cy="920" r="3.5"/>
-    <circle cx="650" cy="1050" r="2.5"/>
-    <circle cx="580" cy="1180" r="3"/>
-    <circle cx="620" cy="1420" r="3.5"/>
-    <circle cx="780" cy="1350" r="4"/>
+    <circle cx="810" cy="380" r="4"/>
+    <circle cx="860" cy="590" r="4.5"/>
+    <circle cx="730" cy="750" r="3.5"/>
+    <circle cx="780" cy="890" r="4"/>
+    <circle cx="670" cy="1020" r="3"/>
+    <circle cx="600" cy="1150" r="3.5"/>
+    <circle cx="640" cy="1390" r="4"/>
+    <circle cx="800" cy="1310" r="4.5"/>
+    <circle cx="710" cy="1490" r="3.5"/>
+    <circle cx="880" cy="980" r="4"/>
+    <circle cx="930" cy="450" r="5"/>
+    <circle cx="750" cy="220" r="4.5"/>
   </g>
 
-  <!-- 6. Heroic Vignette & Cinema Letterbox Tone -->
-  <rect width="1080" height="1920" fill="none" stroke="#000000" stroke-width="20" opacity="0.8"/>
-  <rect x="0" y="0" width="1080" height="160" fill="linear-gradient(to bottom, rgba(0,0,0,0.7), transparent)"/>
-  <rect x="0" y="1760" width="1080" height="160" fill="linear-gradient(to top, rgba(0,0,0,0.8), transparent)"/>
+  <!-- ======================================================== -->
+  <!-- 8. CINEMATIC LETTERBOX, WATERMARK & STORYBOARD METADATA   -->
+  <!-- ======================================================== -->
+  <!-- Top & Bottom Film Vignettes (Darkened Theater Atmosphere) -->
+  <rect x="0" y="0" width="1080" height="220" fill="url(#topVignette)"/>
+  <rect x="0" y="1700" width="1080" height="220" fill="url(#bottomVignette)"/>
+
+  <!-- Cinema Viewfinder Safe Area Corner Brackets -->
+  <g stroke="#f59e0b" stroke-width="2.5" fill="none" opacity="0.45">
+    <!-- Top-Left -->
+    <path d="M 48 80 L 48 48 L 80 48"/>
+    <!-- Top-Right -->
+    <path d="M 1032 80 L 1032 48 L 1000 48"/>
+    <!-- Bottom-Left -->
+    <path d="M 48 1840 L 48 1872 L 80 1872"/>
+    <!-- Bottom-Right -->
+    <path d="M 1032 1840 L 1032 1872 L 1000 1872"/>
+  </g>
+
+  <!-- Header Storyboard Tag in Letterbox -->
+  <g font-family="'Inter', 'Noto Sans TC', sans-serif" opacity="0.85">
+    <rect x="48" y="44" width="150" height="34" rx="6" fill="#000000" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="123" y="67" fill="#ffb703" font-size="14" font-weight="900" text-anchor="middle" letter-spacing="1">SHOT 07</text>
+    
+    <text x="215" y="67" fill="#94a3b8" font-size="13" font-weight="600" font-family="monospace">TC 00:54 - 01:00</text>
+    <text x="1032" y="67" fill="#fef08a" font-size="13" font-weight="800" text-anchor="end" letter-spacing="1">終幕 · 破曉黎明</text>
+  </g>
+
+  <!-- Subtitle Quote in Cinematic Bottom Area -->
+  <g font-family="'Noto Sans TC', 'Inter', sans-serif">
+    <!-- Subtitle Glow Background -->
+    <rect x="90" y="1760" width="900" height="90" rx="14" fill="#000000" fill-opacity="0.6" stroke="#222d42" stroke-width="1"/>
+    
+    <!-- Hero Line 1 -->
+    <text x="540" y="1798" fill="#cbd5e1" font-size="21" font-weight="600" text-anchor="middle" letter-spacing="1">「從板凳最末端走到球場中央，只有十公尺。」</text>
+    
+    <!-- Hero Line 2 (Highlighted in Radiant Dawn Gold) -->
+    <text x="540" y="1832" fill="#ffb703" font-size="23" font-weight="900" text-anchor="middle" letter-spacing="2">「但我，走了整整三百六十五個黎明！」</text>
+  </g>
+
+  <!-- Outer Film Border Frame -->
+  <rect x="0" y="0" width="1080" height="1920" fill="none" stroke="#000000" stroke-width="16" opacity="0.8"/>
 </svg>
