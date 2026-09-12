@@ -499,15 +499,28 @@
             <div class="shot-camera">Extreme Close-Up to Pull Out · Low Angle</div>
             <div class="shot-vo">「那一年的全場歡呼……我連一滴汗，都沒資格流。」</div>
             
-            <div style="font-size: 11px; font-weight: 800; color: var(--cyan); margin-top: 4px;">🇨🇳 中文提示詞（含對白台詞與角色情緒）</div>
-            <div class="prompt-box" id="prompt_s1_zh" style="border-color: rgba(56, 189, 248, 0.25); color: #e2e8f0;">電影級運動動漫畫面，9:16直式構圖，低角度極特寫緩慢拉遠。20歲東亞籃球員陸子軒留著黑色層次碎蓋微亂髮，穿著一塵不染、完全沒流汗的21號黑底紅金邊球衣，孤獨坐在替補席最深處的冷藍陰影中。他神情落寞低頭，雙手用力把捏扁的透明寶特瓶塞入網袋。角色低沉自語對白：「那一年的全場歡呼……我連一滴汗，都沒資格流。」遠景虛焦是漫天落下的金色彩帶與狂歡慶祝的隊友，高反差球館聚光燈，冷藍色調陰影，深沉壓抑的電影氛圍。</div>
+            <!-- 節點連接配置 -->
+            <div style="background: rgba(15, 23, 42, 0.85); border: 1px dashed rgba(255, 183, 3, 0.4); border-radius: 8px; padding: 7px 10px; margin-top: 6px; font-size: 11.5px; line-height: 1.5;">
+              <span style="color: #ffb703; font-weight: 800;">🔌 ComfyUI 節點連接：</span>
+              <div style="color: #cbd5e1; margin-top: 3px; font-size: 11px;">
+                <span style="background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 4px; padding: 1px 5px; font-weight: 700;">Node 137 (&lt;Picture 1&gt;)</span> ➔ <strong>Shot 01 分鏡圖</strong>
+                <span style="margin: 0 4px; color: #64748b;">｜</span>
+                <span style="background: rgba(255, 183, 3, 0.15); color: #ffb703; border: 1px solid rgba(255, 183, 3, 0.3); border-radius: 4px; padding: 1px 5px; font-weight: 700;">Node 139 (&lt;Picture 2&gt;)</span> ➔ <strong>陸子軒 21 號角色圖</strong>
+              </div>
+            </div>
+
+            <div style="font-size: 11px; font-weight: 800; color: #ffb703; margin-top: 6px;">🎬 MiniMax H3 專用提詞（方案一標準 · 直貼 Node 138）</div>
+            <div class="prompt-box" id="prompt_s1_zh" style="border-color: rgba(255, 183, 3, 0.35); color: #f8fafc; font-size: 12px; line-height: 1.6;">電影級熱血運動動漫，9:16直式構圖。
+參考 &lt;Picture 1&gt; 的構圖與光影，&lt;Picture 2&gt; 的 21 號球員陸子軒孤獨坐在替補席最深處的冷藍陰影中，雙手捏緊壓扁的寶特瓶塞入網袋，身上球衣一塵不染，背後是遠處隊友在金色彩帶下的慶祝虛焦。
+
+聲音：一名年輕男子用中文低沉自語："連一滴汗，都沒流。" 伴隨塑膠寶特瓶被捏扁的脆裂聲與遠處微弱的球館歡呼迴音。</div>
             
-            <div style="font-size: 11px; font-weight: 800; color: var(--gold); margin-top: 4px;">🇺🇸 英文提示詞 (MiniMax / Kling / Runway)</div>
-            <div class="prompt-box" id="prompt_s1_en">Cinematic sports anime movie scene, 9:16 vertical frame, 20yo handsome East Asian basketball player Lu Zi-xuan sitting alone in deep cold blue shadows on bench edge, looking down at empty crumpled water bottle, pristine clean black jersey #21 without sweat, distant bright background out of focus teammates celebrating under golden confetti, emotional atmosphere</div>
+            <div style="font-size: 11px; font-weight: 800; color: var(--cyan); margin-top: 4px;">🖼️ 分鏡首幀生圖 Prompt（Midjourney / SD / 生圖用）</div>
+            <div class="prompt-box" id="prompt_s1_en" style="border-color: rgba(56, 189, 248, 0.25); color: #94a3b8;">Cinematic sports anime, 9:16 vertical frame, highly detailed dramatic chiaroscuro lighting, 20yo East Asian male basketball player Lu Zi-xuan in pristine clean black jersey #21 with red-gold trim, sitting isolated in deep blue shadows on bench edge, hands gripping crumpled water bottle, out-of-focus background teammates celebrating under golden confetti, 8k --ar 9:16</div>
             
             <div style="display: flex; gap: 8px; margin-top: auto;">
-              <button class="btn-copy" style="flex: 1;" onclick="copyText('prompt_s1_zh')">📋 複製中文 (含對白)</button>
-              <button class="btn-copy" style="flex: 1; background: rgba(56, 189, 248, 0.1); border-color: var(--cyan); color: var(--cyan);" onclick="copyText('prompt_s1_en')">📋 複製英文</button>
+              <button class="btn-copy" style="flex: 1; background: rgba(255, 183, 3, 0.15); border-color: #ffb703; color: #ffb703;" onclick="copyText('prompt_s1_zh')">📋 複製 MiniMax 專用提詞</button>
+              <button class="btn-copy" style="flex: 1; background: rgba(56, 189, 248, 0.1); border-color: var(--cyan); color: var(--cyan);" onclick="copyText('prompt_s1_en')">📋 複製首幀生圖 Prompt</button>
             </div>
           </div>
         </div>
@@ -527,15 +540,28 @@
             <div class="shot-camera">Floor-Level Tracking Shot · Low Angle</div>
             <div class="shot-vo">「但我不是來這裡……當一輩子觀眾的！每天五百顆跳投、二十組極限衝刺！」</div>
             
-            <div style="font-size: 11px; font-weight: 800; color: var(--cyan); margin-top: 4px;">🇨🇳 中文提示詞（含對白台詞與角色情緒）</div>
-            <div class="prompt-box" id="prompt_s2_zh" style="border-color: rgba(56, 189, 248, 0.25); color: #e2e8f0;">電影級運動動漫畫面，9:16直式構圖，貼地低角度跟隨鏡頭。凌晨五點半空曠挑高的室內籃球館，冷藍晨霧在反光木地板上瀰漫。陸子軒穿著21號球衣與黑色加壓褲，以極低重心瘋狂進行極限防守滑步，球鞋橡膠在地面發出刺耳煞車摩擦聲。汗水不斷從下巴滴落木地板，他在冷空氣中吐出白霧熱氣，眼神燃燒著執念咬牙怒吼對白：「但我不是來這裡當一輩子觀眾的！每天五百顆跳投、二十組極限衝刺！」頂棚單一孤立聚光燈，動態殘影，汗珠飛濺。</div>
+            <!-- 節點連接配置 -->
+            <div style="background: rgba(15, 23, 42, 0.85); border: 1px dashed rgba(255, 183, 3, 0.4); border-radius: 8px; padding: 7px 10px; margin-top: 6px; font-size: 11.5px; line-height: 1.5;">
+              <span style="color: #ffb703; font-weight: 800;">🔌 ComfyUI 節點連接：</span>
+              <div style="color: #cbd5e1; margin-top: 3px; font-size: 11px;">
+                <span style="background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 4px; padding: 1px 5px; font-weight: 700;">Node 137 (&lt;Picture 1&gt;)</span> ➔ <strong>Shot 02 分鏡圖</strong>
+                <span style="margin: 0 4px; color: #64748b;">｜</span>
+                <span style="background: rgba(255, 183, 3, 0.15); color: #ffb703; border: 1px solid rgba(255, 183, 3, 0.3); border-radius: 4px; padding: 1px 5px; font-weight: 700;">Node 139 (&lt;Picture 2&gt;)</span> ➔ <strong>陸子軒 21 號角色圖</strong>
+              </div>
+            </div>
 
-            <div style="font-size: 11px; font-weight: 800; color: var(--gold); margin-top: 4px;">🇺🇸 英文提示詞 (MiniMax / Kling / Runway)</div>
-            <div class="prompt-box" id="prompt_s2_en">Cinematic sports anime movie scene, 9:16 vertical frame, low-angle floor level shot, 5:30 AM dawn in empty indoor gymnasium, cold blue morning mist floating above polished reflective floor, Lu Zi-xuan in black jersey #21 executing intense defensive sliding steps, heavy sweat dripping, breathing out visible steam, dramatic lone ceiling spotlight</div>
+            <div style="font-size: 11px; font-weight: 800; color: #ffb703; margin-top: 6px;">🎬 MiniMax H3 專用提詞（方案一標準 · 直貼 Node 138）</div>
+            <div class="prompt-box" id="prompt_s2_zh" style="border-color: rgba(255, 183, 3, 0.35); color: #f8fafc; font-size: 12px; line-height: 1.6;">電影級熱血運動動漫，9:16直式構圖。
+參考 &lt;Picture 1&gt; 的構圖，&lt;Picture 2&gt; 的 21 號球員陸子軒在清晨五點半冷藍晨霧瀰漫的球館中，以極低重心在反光木地板上進行極限防守滑步，汗水滴落地板，口中吐出白霧。
+
+聲音：一名年輕男子用中文咬牙狂吼："絕不當一輩子觀眾！" 伴隨球鞋橡膠在木地板上的尖銳抓地摩擦聲與劇烈喘息聲。</div>
+
+            <div style="font-size: 11px; font-weight: 800; color: var(--cyan); margin-top: 4px;">🖼️ 分鏡首幀生圖 Prompt（Midjourney / SD / 生圖用）</div>
+            <div class="prompt-box" id="prompt_s2_en" style="border-color: rgba(56, 189, 248, 0.25); color: #94a3b8;">Cinematic sports anime, 9:16 vertical frame, floor-level tracking shot, 5:30 AM empty indoor gymnasium, cold blue morning mist, Lu Zi-xuan in black jersey #21 executing intense low defensive sliding steps across reflective court, rubber sneakers squeaking, sweat dripping, breathing visible steam, dynamic lighting, 8k --ar 9:16</div>
 
             <div style="display: flex; gap: 8px; margin-top: auto;">
-              <button class="btn-copy" style="flex: 1;" onclick="copyText('prompt_s2_zh')">📋 複製中文 (含對白)</button>
-              <button class="btn-copy" style="flex: 1; background: rgba(56, 189, 248, 0.1); border-color: var(--cyan); color: var(--cyan);" onclick="copyText('prompt_s2_en')">📋 複製英文</button>
+              <button class="btn-copy" style="flex: 1; background: rgba(255, 183, 3, 0.15); border-color: #ffb703; color: #ffb703;" onclick="copyText('prompt_s2_zh')">📋 複製 MiniMax 專用提詞</button>
+              <button class="btn-copy" style="flex: 1; background: rgba(56, 189, 248, 0.1); border-color: var(--cyan); color: var(--cyan);" onclick="copyText('prompt_s2_en')">📋 複製首幀生圖 Prompt</button>
             </div>
           </div>
         </div>
@@ -555,15 +581,30 @@
             <div class="shot-camera">Medium Shot Push-In · High Contrast Chiaroscuro</div>
             <div class="shot-vo">「球隊最不缺的，就是自以為是的得分手！滾回去遞水！」</div>
             
-            <div style="font-size: 11px; font-weight: 800; color: var(--cyan); margin-top: 4px;">🇨🇳 中文提示詞（含對白台詞與角色情緒）</div>
-            <div class="prompt-box" id="prompt_s3_zh" style="border-color: rgba(56, 189, 248, 0.25); color: #e2e8f0;">電影級運動動漫畫面，9:16直式構圖，中景緩慢推鏡。40歲總教練高振峰穿著黑底紅金運動夾克，胸前掛著金屬銀哨，左手持戰術板，眼神如獵鷹般銳利嚴苛。木地板上陸子軒進攻被大火鍋封蓋後摔坐在地，手肘挫傷，膝蓋上的繃帶滲出斑斑血跡，籃球在陰影中滾動。高教練手指著他厲聲訓斥對白：「球隊最不缺的，就是自以為是的得分手！滾回去遞水！」強烈明暗對比，充滿壓迫感與嚴師鐵血氣場。</div>
+            <!-- 節點連接配置 -->
+            <div style="background: rgba(15, 23, 42, 0.85); border: 1px dashed rgba(255, 183, 3, 0.4); border-radius: 8px; padding: 7px 10px; margin-top: 6px; font-size: 11.5px; line-height: 1.5;">
+              <span style="color: #ffb703; font-weight: 800;">🔌 ComfyUI 節點連接：</span>
+              <div style="color: #cbd5e1; margin-top: 3px; font-size: 11px;">
+                <span style="background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 4px; padding: 1px 5px; font-weight: 700;">Node 137 (&lt;Picture 1&gt;)</span> ➔ <strong>Shot 03 分鏡圖</strong>
+                <span style="margin: 0 4px; color: #64748b;">｜</span>
+                <span style="background: rgba(255, 183, 3, 0.15); color: #ffb703; border: 1px solid rgba(255, 183, 3, 0.3); border-radius: 4px; padding: 1px 5px; font-weight: 700;">Node 139 (&lt;Picture 2&gt;)</span> ➔ <strong>高振峰教練角色圖</strong>
+                <span style="margin: 0 4px; color: #64748b;">｜</span>
+                <span style="background: rgba(244, 63, 94, 0.15); color: #f43f5e; border: 1px solid rgba(244, 63, 94, 0.3); border-radius: 4px; padding: 1px 5px; font-weight: 700;">Node 147 (&lt;Picture 3&gt;)</span> ➔ <strong>陸子軒 21 號角色圖</strong>
+              </div>
+            </div>
 
-            <div style="font-size: 11px; font-weight: 800; color: var(--gold); margin-top: 4px;">🇺🇸 英文提示詞 (MiniMax / Kling / Runway)</div>
-            <div class="prompt-box" id="prompt_s3_en">Cinematic sports anime movie scene, 9:16 vertical frame, Coach Gao Zhen-feng in black track jacket with red-gold trim standing sternly holding whiteboard and whistle, looking down with intense discipline, player Lu Zi-xuan #21 fallen on court with scraped bruised knee bandages with blood stains, basketball bouncing away in shadows</div>
+            <div style="font-size: 11px; font-weight: 800; color: #ffb703; margin-top: 6px;">🎬 MiniMax H3 專用提詞（方案一標準 · 直貼 Node 138）</div>
+            <div class="prompt-box" id="prompt_s3_zh" style="border-color: rgba(255, 183, 3, 0.35); color: #f8fafc; font-size: 12px; line-height: 1.6;">電影級熱血運動動漫，9:16直式構圖。
+參考 &lt;Picture 1&gt; 的構圖，&lt;Picture 2&gt; 的高教練身穿黑底紅金夾克、胸前掛銀哨手持戰術板，眼神如獵鷹般銳利嚴苛，手指嚴厲指向摔坐在木地板上的 &lt;Picture 3&gt; 膝蓋滲血繃帶，籃球在旁滾動。
+
+聲音：一名成熟教練用中文威嚴怒斥："把命拼在地板上！" 伴隨戰術板重重敲擊的脆響與金屬口哨晃動聲。</div>
+
+            <div style="font-size: 11px; font-weight: 800; color: var(--cyan); margin-top: 4px;">🖼️ 分鏡首幀生圖 Prompt（Midjourney / SD / 生圖用）</div>
+            <div class="prompt-box" id="prompt_s3_en" style="border-color: rgba(56, 189, 248, 0.25); color: #94a3b8;">Cinematic sports anime, 9:16 vertical frame, coach Gao Zhen-feng in black track jacket with red-gold panels and silver whistle, stern sharp falcon eyes holding clipboard, pointing down at fallen player Lu Zi-xuan #21 with bloody scraped knee bandage on wood floor, moody chiaroscuro lighting, 8k --ar 9:16</div>
 
             <div style="display: flex; gap: 8px; margin-top: auto;">
-              <button class="btn-copy" style="flex: 1;" onclick="copyText('prompt_s3_zh')">📋 複製中文 (含對白)</button>
-              <button class="btn-copy" style="flex: 1; background: rgba(56, 189, 248, 0.1); border-color: var(--cyan); color: var(--cyan);" onclick="copyText('prompt_s3_en')">📋 複製英文</button>
+              <button class="btn-copy" style="flex: 1; background: rgba(255, 183, 3, 0.15); border-color: #ffb703; color: #ffb703;" onclick="copyText('prompt_s3_zh')">📋 複製 MiniMax 專用提詞</button>
+              <button class="btn-copy" style="flex: 1; background: rgba(56, 189, 248, 0.1); border-color: var(--cyan); color: var(--cyan);" onclick="copyText('prompt_s3_en')">📋 複製首幀生圖 Prompt</button>
             </div>
           </div>
         </div>
@@ -583,15 +624,30 @@
             <div class="shot-camera">Dynamic Action Whip-Pan · Fast Shutter Speed</div>
             <div class="shot-vo">「進攻會失準，但只要心臟還在跳就永不背叛——骨氣與防守！」</div>
             
-            <div style="font-size: 11px; font-weight: 800; color: var(--cyan); margin-top: 4px;">🇨🇳 中文提示詞（含對白台詞與角色情緒）</div>
-            <div class="prompt-box" id="prompt_s4_zh" style="border-color: rgba(56, 189, 248, 0.25); color: #e2e8f0;">電影級運動動漫畫面，9:16直式構圖，動態甩鏡高速快門捕捉。隊內對抗賽，陸子軒壓低重心如餓狼般死亡纏繞防守隊長陳浩天（4號）。浩天試圖交叉變向突破，子軒預判腳步閃電前撲，長臂如鐵鉗般精準切擊，指尖乾脆挑飛籃球！子軒眼神野性兇狠，心中怒吼對白：「進攻會失準，但只要心臟還在跳就永不背叛——骨氣與防守！」汗珠如碎鑽般炸開，木地板動態倒影，火花四濺的攻防張力。</div>
+            <!-- 節點連接配置 -->
+            <div style="background: rgba(15, 23, 42, 0.85); border: 1px dashed rgba(255, 183, 3, 0.4); border-radius: 8px; padding: 7px 10px; margin-top: 6px; font-size: 11.5px; line-height: 1.5;">
+              <span style="color: #ffb703; font-weight: 800;">🔌 ComfyUI 節點連接：</span>
+              <div style="color: #cbd5e1; margin-top: 3px; font-size: 11px;">
+                <span style="background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 4px; padding: 1px 5px; font-weight: 700;">Node 137 (&lt;Picture 1&gt;)</span> ➔ <strong>Shot 04 分鏡圖</strong>
+                <span style="margin: 0 4px; color: #64748b;">｜</span>
+                <span style="background: rgba(255, 183, 3, 0.15); color: #ffb703; border: 1px solid rgba(255, 183, 3, 0.3); border-radius: 4px; padding: 1px 5px; font-weight: 700;">Node 139 (&lt;Picture 2&gt;)</span> ➔ <strong>陸子軒 21 號角色圖</strong>
+                <span style="margin: 0 4px; color: #64748b;">｜</span>
+                <span style="background: rgba(244, 63, 94, 0.15); color: #f43f5e; border: 1px solid rgba(244, 63, 94, 0.3); border-radius: 4px; padding: 1px 5px; font-weight: 700;">Node 147 (&lt;Picture 3&gt;)</span> ➔ <strong>隊長陳浩天 4 號角色圖</strong>
+              </div>
+            </div>
 
-            <div style="font-size: 11px; font-weight: 800; color: var(--gold); margin-top: 4px;">🇺🇸 英文提示詞 (MiniMax / Kling / Runway)</div>
-            <div class="prompt-box" id="prompt_s4_en">Cinematic sports anime movie scene, 9:16 vertical frame, dynamic action angle with motion blur, player Lu Zi-xuan #21 in low defense against captain Chen Hao-tian #4, lunging forward with lightning reflex, hand cleanly slapping basketball away, sparkling sweat flying under bright gym lights, intense predator eyes</div>
+            <div style="font-size: 11px; font-weight: 800; color: #ffb703; margin-top: 6px;">🎬 MiniMax H3 專用提詞（方案一標準 · 直貼 Node 138）</div>
+            <div class="prompt-box" id="prompt_s4_zh" style="border-color: rgba(255, 183, 3, 0.35); color: #f8fafc; font-size: 12px; line-height: 1.6;">電影級熱血運動動漫，9:16直式構圖。
+參考 &lt;Picture 1&gt; 的構圖，&lt;Picture 2&gt; 的 21 號球員陸子軒壓低重心死亡纏繞防守 &lt;Picture 3&gt; 的隊長陳浩天，閃電預判前撲，長臂以極限速度精準切球挑飛籃球，動態殘影與汗珠炸開。
+
+聲音：一名年輕男子用中文野性大喊："球給我留下！" 伴隨手掌乾脆拍擊籃球的清脆切球聲與球鞋急停煞車摩擦聲。</div>
+
+            <div style="font-size: 11px; font-weight: 800; color: var(--cyan); margin-top: 4px;">🖼️ 分鏡首幀生圖 Prompt（Midjourney / SD / 生圖用）</div>
+            <div class="prompt-box" id="prompt_s4_en" style="border-color: rgba(56, 189, 248, 0.25); color: #94a3b8;">Cinematic sports anime, 9:16 vertical frame, dynamic action whip pan, Lu Zi-xuan #21 in ultra-low defensive stance locking down captain Chen Hao-tian #4, explosive reach cleanly stripping the basketball, sweat droplets flying under bright arena lights, motion blur, 8k --ar 9:16</div>
 
             <div style="display: flex; gap: 8px; margin-top: auto;">
-              <button class="btn-copy" style="flex: 1;" onclick="copyText('prompt_s4_zh')">📋 複製中文 (含對白)</button>
-              <button class="btn-copy" style="flex: 1; background: rgba(56, 189, 248, 0.1); border-color: var(--cyan); color: var(--cyan);" onclick="copyText('prompt_s4_en')">📋 複製英文</button>
+              <button class="btn-copy" style="flex: 1; background: rgba(255, 183, 3, 0.15); border-color: #ffb703; color: #ffb703;" onclick="copyText('prompt_s4_zh')">📋 複製 MiniMax 專用提詞</button>
+              <button class="btn-copy" style="flex: 1; background: rgba(56, 189, 248, 0.1); border-color: var(--cyan); color: var(--cyan);" onclick="copyText('prompt_s4_en')">📋 複製首幀生圖 Prompt</button>
             </div>
           </div>
         </div>
@@ -611,15 +667,28 @@
             <div class="shot-camera">120fps Slow-Motion Crash Zoom · Arena Lights</div>
             <div class="shot-vo">「全場沒人知道我是誰！但我知道——球在哪裡，命就在哪裡！！」</div>
             
-            <div style="font-size: 11px; font-weight: 800; color: var(--cyan); margin-top: 4px;">🇨🇳 中文提示詞（含對白台詞與角色情緒）</div>
-            <div class="prompt-box" id="prompt_s5_zh" style="border-color: rgba(56, 189, 248, 0.25); color: #e2e8f0;">電影級運動動漫畫面，9:16直式構圖，120幀極限慢動作撞擊推鏡。八強生死戰最後一擊，籃球向邊線外飛去。陸子軒穿著21號戰袍完全無視障礙，整個人與地面平行魚躍橫身飛出界外！手臂青筋暴起，在空中狂吼對白：「全場沒人知道我是誰！但我知道——球在哪裡，命就在哪裡！！」單手極限將球撈回場內，下一秒身體重重撞翻技術台擋板與金屬折疊椅，紙張、筆電與水瓶在半空中翻飛散落，強烈球場探照燈，震撼高潮定格。</div>
+            <!-- 節點連接配置 -->
+            <div style="background: rgba(15, 23, 42, 0.85); border: 1px dashed rgba(255, 183, 3, 0.4); border-radius: 8px; padding: 7px 10px; margin-top: 6px; font-size: 11.5px; line-height: 1.5;">
+              <span style="color: #ffb703; font-weight: 800;">🔌 ComfyUI 節點連接：</span>
+              <div style="color: #cbd5e1; margin-top: 3px; font-size: 11px;">
+                <span style="background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 4px; padding: 1px 5px; font-weight: 700;">Node 137 (&lt;Picture 1&gt;)</span> ➔ <strong>Shot 05 分鏡圖</strong>
+                <span style="margin: 0 4px; color: #64748b;">｜</span>
+                <span style="background: rgba(255, 183, 3, 0.15); color: #ffb703; border: 1px solid rgba(255, 183, 3, 0.3); border-radius: 4px; padding: 1px 5px; font-weight: 700;">Node 139 (&lt;Picture 2&gt;)</span> ➔ <strong>陸子軒 21 號角色圖</strong>
+              </div>
+            </div>
 
-            <div style="font-size: 11px; font-weight: 800; color: var(--gold); margin-top: 4px;">🇺🇸 英文提示詞 (MiniMax / Kling / Runway)</div>
-            <div class="prompt-box" id="prompt_s5_en">Cinematic sports anime scene, 9:16 vertical, 120fps slow-motion action frame, player Lu Zi-xuan #21 airborne diving horizontally parallel to court over boundary line, veins bulging, one hand scooping loose basketball back, crashing through courtside table, metal folding chairs knocked over, flying water bottles and papers</div>
+            <div style="font-size: 11px; font-weight: 800; color: #ffb703; margin-top: 6px;">🎬 MiniMax H3 專用提詞（方案一標準 · 直貼 Node 138）</div>
+            <div class="prompt-box" id="prompt_s5_zh" style="border-color: rgba(255, 183, 3, 0.35); color: #f8fafc; font-size: 12px; line-height: 1.6;">電影級熱血運動動漫，9:16直式構圖。
+參考 &lt;Picture 1&gt; 的構圖與動作，&lt;Picture 2&gt; 的 21 號球員陸子軒在邊線整個人橫身平飛出界撲救，右手將籃球死死撈回場內，隨後身體猛烈撞翻技術台與折疊鐵椅，水瓶與紙張飛散。
+
+聲音：一名年輕男子用中文憤怒大喊："球在哪裡，命就在哪裡！" 伴隨金屬折疊椅被撞翻的劇烈金屬砸地巨響與球場球鞋抓地摩擦聲。</div>
+
+            <div style="font-size: 11px; font-weight: 800; color: var(--cyan); margin-top: 4px;">🖼️ 分鏡首幀生圖 Prompt（Midjourney / SD / 生圖用）</div>
+            <div class="prompt-box" id="prompt_s5_en" style="border-color: rgba(56, 189, 248, 0.25); color: #94a3b8;">Cinematic sports anime, 9:16 vertical frame, 120fps slow-motion crash zoom, Lu Zi-xuan #21 airborne diving horizontally parallel to court over boundary line, veins bulging, one hand scooping loose basketball back, crashing through courtside table, folding chairs knocked over, flying water bottles, 8k --ar 9:16</div>
 
             <div style="display: flex; gap: 8px; margin-top: auto;">
-              <button class="btn-copy" style="flex: 1;" onclick="copyText('prompt_s5_zh')">📋 複製中文 (含對白)</button>
-              <button class="btn-copy" style="flex: 1; background: rgba(56, 189, 248, 0.1); border-color: var(--cyan); color: var(--cyan);" onclick="copyText('prompt_s5_en')">📋 複製英文</button>
+              <button class="btn-copy" style="flex: 1; background: rgba(255, 183, 3, 0.15); border-color: #ffb703; color: #ffb703;" onclick="copyText('prompt_s5_zh')">📋 複製 MiniMax 專用提詞</button>
+              <button class="btn-copy" style="flex: 1; background: rgba(56, 189, 248, 0.1); border-color: var(--cyan); color: var(--cyan);" onclick="copyText('prompt_s5_en')">📋 複製首幀生圖 Prompt</button>
             </div>
           </div>
         </div>
@@ -639,15 +708,30 @@
             <div class="shot-camera">Macro Rack Focus Tilt-Up · Morning Sunbeams</div>
             <div class="shot-vo">「替補席，不再是我的終點。先發第五人，第二十一號！」</div>
             
-            <div style="font-size: 11px; font-weight: 800; color: var(--cyan); margin-top: 4px;">🇨🇳 中文提示詞（含對白台詞與角色情緒）</div>
-            <div class="prompt-box" id="prompt_s6_zh" style="border-color: rgba(56, 189, 248, 0.25); color: #e2e8f0;">電影級運動動漫畫面，9:16直式構圖，微距變焦由白板上搖。清晨金色的晨光透過更衣室百葉窗灑下丁達爾光束，高教練手持黑色麥克筆，在白板先發五人名單最後一欄重重寫下「#21 陸子軒 (SF)」。鏡頭移向坐在長凳上的陸子軒，他眼眶含淚泛紅、雙拳緊握，哽咽自語對白：「替補席，不再是我的終點。先發名單上的最後一個名字……第二十一號。」隊長陳浩天與中鋒趙磊在身旁激動拍打他的肩膀大笑歡呼，溫暖感人的榮耀加冕時刻。</div>
+            <!-- 節點連接配置 -->
+            <div style="background: rgba(15, 23, 42, 0.85); border: 1px dashed rgba(255, 183, 3, 0.4); border-radius: 8px; padding: 7px 10px; margin-top: 6px; font-size: 11.5px; line-height: 1.5;">
+              <span style="color: #ffb703; font-weight: 800;">🔌 ComfyUI 節點連接：</span>
+              <div style="color: #cbd5e1; margin-top: 3px; font-size: 11px;">
+                <span style="background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 4px; padding: 1px 5px; font-weight: 700;">Node 137 (&lt;Picture 1&gt;)</span> ➔ <strong>Shot 06 分鏡圖</strong>
+                <span style="margin: 0 4px; color: #64748b;">｜</span>
+                <span style="background: rgba(255, 183, 3, 0.15); color: #ffb703; border: 1px solid rgba(255, 183, 3, 0.3); border-radius: 4px; padding: 1px 5px; font-weight: 700;">Node 139 (&lt;Picture 2&gt;)</span> ➔ <strong>高振峰教練角色圖</strong>
+                <span style="margin: 0 4px; color: #64748b;">｜</span>
+                <span style="background: rgba(244, 63, 94, 0.15); color: #f43f5e; border: 1px solid rgba(244, 63, 94, 0.3); border-radius: 4px; padding: 1px 5px; font-weight: 700;">Node 147 (&lt;Picture 3&gt;)</span> ➔ <strong>陸子軒 21 號角色圖</strong>
+              </div>
+            </div>
 
-            <div style="font-size: 11px; font-weight: 800; color: var(--gold); margin-top: 4px;">🇺🇸 英文提示詞 (MiniMax / Kling / Runway)</div>
-            <div class="prompt-box" id="prompt_s6_en">Cinematic sports anime movie scene, 9:16 vertical frame, warm morning sunlight cutting through locker room window blinds, coach Gao Zhen-feng writing with black marker on clean whiteboard bold text '#21 LU ZI-XUAN (SF)', camera tilts to player Lu Zi-xuan with tears in emotional eyes, teammates cheering around him</div>
+            <div style="font-size: 11px; font-weight: 800; color: #ffb703; margin-top: 6px;">🎬 MiniMax H3 專用提詞（方案一標準 · 直貼 Node 138）</div>
+            <div class="prompt-box" id="prompt_s6_zh" style="border-color: rgba(255, 183, 3, 0.35); color: #f8fafc; font-size: 12px; line-height: 1.6;">電影級熱血運動動漫，9:16直式構圖。
+參考 &lt;Picture 1&gt; 的構圖，晨光透過更衣室百葉窗，&lt;Picture 2&gt; 的高教練用黑筆在白板重重寫下「#21 陸子軒 (SF)」，鏡頭轉向後排坐在長凳上的 &lt;Picture 3&gt; 陸子軒眼眶含淚泛紅、雙手握拳，隊友圍繞激動拍肩。
+
+聲音：一名教練用中文沉穩宣布："先發，第二十一號！" 伴隨麥克筆劃在白板上的摩擦聲與隊友熱烈的拍桌歡呼聲。</div>
+
+            <div style="font-size: 11px; font-weight: 800; color: var(--cyan); margin-top: 4px;">🖼️ 分鏡首幀生圖 Prompt（Midjourney / SD / 生圖用）</div>
+            <div class="prompt-box" id="prompt_s6_en" style="border-color: rgba(56, 189, 248, 0.25); color: #94a3b8;">Cinematic sports anime, 9:16 vertical frame, macro tilt-up, warm morning sunlight through locker room blinds, coach Gao Zhen-feng writing with black marker on clean whiteboard '#21 LU ZI-XUAN (SF)', camera pans to Lu Zi-xuan with tears in emotional eyes, cheering teammates, 8k --ar 9:16</div>
 
             <div style="display: flex; gap: 8px; margin-top: auto;">
-              <button class="btn-copy" style="flex: 1;" onclick="copyText('prompt_s6_zh')">📋 複製中文 (含對白)</button>
-              <button class="btn-copy" style="flex: 1; background: rgba(56, 189, 248, 0.1); border-color: var(--cyan); color: var(--cyan);" onclick="copyText('prompt_s6_en')">📋 複製英文</button>
+              <button class="btn-copy" style="flex: 1; background: rgba(255, 183, 3, 0.15); border-color: #ffb703; color: #ffb703;" onclick="copyText('prompt_s6_zh')">📋 複製 MiniMax 專用提詞</button>
+              <button class="btn-copy" style="flex: 1; background: rgba(56, 189, 248, 0.1); border-color: var(--cyan); color: var(--cyan);" onclick="copyText('prompt_s6_en')">📋 複製首幀生圖 Prompt</button>
             </div>
           </div>
         </div>
@@ -669,19 +753,34 @@
             <div class="shot-camera">Slow Dolly-In Over The Shoulder · God Rays</div>
             <div class="shot-vo">「從板凳最末端走到球場中央只有十公尺，但我走了整整三百六十五個黎明！」</div>
             
-            <div style="font-size: 11px; font-weight: 800; color: var(--cyan); margin-top: 4px;">🇨🇳 中文提示詞（含對白台詞與角色情緒）</div>
-            <div class="prompt-box" id="prompt_s7_zh" style="border-color: rgba(56, 189, 248, 0.25); color: #e2e8f0;">電影級運動動漫畫面，9:16直式構圖，越肩低角度慢速推進英雄背影。體育館穹頂玻璃天窗射入萬道破曉朝陽金光（God rays），神聖光芒籠罩陸子軒汗濕的21號黑金球衣。他低頭用力繫緊左手腕上的黑色護腕，堅定邁開步伐踏入球場中央的跳球圓圈。深沉鏗鏘的畫外音對白：「從板凳最末端走到球場中央，只有十公尺。但我，走了整整三百六十五個黎明！」英雄走向光芒的剪影，自信無比，逐漸淡出至黑幕。</div>
-
-            <div style="font-size: 11px; font-weight: 800; color: var(--gold); margin-top: 4px;">🇺🇸 英文提示詞 (MiniMax / Kling / Runway)</div>
-            <div class="prompt-box" id="prompt_s7_en">Cinematic sports anime movie scene, 9:16 vertical frame, slow dolly-in over shoulder heroic back view, brilliant golden sunrise god rays streaming through high glass skylight illuminating weathered jersey #21 on Lu Zi-xuan, tightening black wristband, stepping resolutely into center court jump ball circle, victorious finale</div>
-
-            <div style="display: flex; gap: 8px; margin-top: auto;">
-              <button class="btn-copy" style="flex: 1;" onclick="copyText('prompt_s7_zh')">📋 複製中文 (含對白)</button>
-              <button class="btn-copy" style="flex: 1; background: rgba(56, 189, 248, 0.1); border-color: var(--cyan); color: var(--cyan);" onclick="copyText('prompt_s7_en')">📋 複製英文</button>
+            <!-- 節點連接配置 -->
+            <div style="background: rgba(15, 23, 42, 0.85); border: 1px dashed rgba(255, 183, 3, 0.4); border-radius: 8px; padding: 7px 10px; margin-top: 6px; font-size: 11.5px; line-height: 1.5;">
+              <span style="color: #ffb703; font-weight: 800;">🔌 ComfyUI 節點連接：</span>
+              <div style="color: #cbd5e1; margin-top: 3px; font-size: 11px;">
+                <span style="background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 4px; padding: 1px 5px; font-weight: 700;">Node 137 (&lt;Picture 1&gt;)</span> ➔ <strong>Shot 07 分鏡圖</strong>
+                <span style="margin: 0 4px; color: #64748b;">｜</span>
+                <span style="background: rgba(255, 183, 3, 0.15); color: #ffb703; border: 1px solid rgba(255, 183, 3, 0.3); border-radius: 4px; padding: 1px 5px; font-weight: 700;">Node 139 (&lt;Picture 2&gt;)</span> ➔ <strong>陸子軒 21 號角色圖</strong>
+              </div>
             </div>
-            <a href="shot_07_preview.html" target="_blank" class="btn-copy" style="margin-top: 8px; background: rgba(255, 183, 3, 0.18); border-color: var(--gold); color: var(--gold); text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 6px;">
-              🔍 開啟 Shot 07 獨立大圖全螢幕預覽
-            </a>
+
+            <div style="font-size: 11px; font-weight: 800; color: #ffb703; margin-top: 6px;">🎬 MiniMax H3 專用提詞（方案一標準 · 直貼 Node 138）</div>
+            <div class="prompt-box" id="prompt_s7_zh" style="border-color: rgba(255, 183, 3, 0.35); color: #f8fafc; font-size: 12px; line-height: 1.6;">電影級熱血運動動漫，9:16直式構圖。
+參考 &lt;Picture 1&gt; 的構圖，體育館天窗射入萬道破曉金色晨光，神聖光柱籠罩 &lt;Picture 2&gt; 陸子軒汗濕的 21 號球衣背影，他繫緊左手黑色護腕，昂首闊步邁向球場中央跳球區。
+
+聲音：一名年輕男子用中文堅定低語："走向破曉！" 伴隨沉穩有力的球鞋踏地聲與球館空靈震撼的黎明迴響。</div>
+
+            <div style="font-size: 11px; font-weight: 800; color: var(--cyan); margin-top: 4px;">🖼️ 分鏡首幀生圖 Prompt（Midjourney / SD / 生圖用）</div>
+            <div class="prompt-box" id="prompt_s7_en" style="border-color: rgba(56, 189, 248, 0.25); color: #94a3b8;">Cinematic sports anime, 9:16 vertical frame, slow dolly-in over-the-shoulder heroic back view, brilliant golden sunrise god rays streaming through high glass skylight illuminating weathered jersey #21 on Lu Zi-xuan, tightening black wristband, stepping into center court, 8k --ar 9:16</div>
+
+            <div style="display: flex; gap: 8px; margin-top: auto; flex-direction: column;">
+              <div style="display: flex; gap: 8px;">
+                <button class="btn-copy" style="flex: 1; background: rgba(255, 183, 3, 0.15); border-color: #ffb703; color: #ffb703;" onclick="copyText('prompt_s7_zh')">📋 複製 MiniMax 專用提詞</button>
+                <button class="btn-copy" style="flex: 1; background: rgba(56, 189, 248, 0.1); border-color: var(--cyan); color: var(--cyan);" onclick="copyText('prompt_s7_en')">📋 複製首幀生圖 Prompt</button>
+              </div>
+              <a href="shot_07_preview.html" target="_blank" class="btn-copy" style="background: rgba(255, 183, 3, 0.18); border-color: var(--gold); color: var(--gold); text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 6px;">
+                🔍 開啟 Shot 07 獨立大圖全螢幕預覽
+              </a>
+            </div>
           </div>
         </div>
 
